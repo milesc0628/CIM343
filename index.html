@@ -6,14 +6,25 @@
   <html>
     <head>
         <title>My super awesome not first website!</title>
+        <meta name="author" content="Miles Charles">
+        <meta name="description" content="Testing website to experiment with HTML.">
+        <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
     </head>
         <body>
             <header>
                 <h1>My Awesome Website</h1>
-                <nav></nav>
+                <nav>
+                    <ul>
+                        <li><a href="page2.html">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                    </ul>
+                </nav>
             </header>
             <main>
-                <section>
+                <section id="section2">
                     <h2>Heading</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Totam quo tempora quaerat cupiditate fugiat dolore? Vitae laborum, 
@@ -28,7 +39,7 @@
                         consequuntur architecto beatae molestias ullam earum ipsa excepturi 
                         doloremque facilis suscipit numquam exercitationem.</p>
                 </section>
-                <section>
+                <section id="section3">
                     <h3>What's for dinner?</h3>
                     <ol>
                         <li>Sushi</li>
@@ -49,6 +60,17 @@
                         </li>
                         <li>Icecream</li>
                     </ul>
+                </section>
+                <section>
+                    <h4>Inline tag</h4>
+                    <p>This is a <strong>tag.</strong></p>
+                    <p>This is a <em>tag.</em></p>
+                    <p>This is a <b>tag.</b></p>
+                    <p>This is a <i>tag.</i></p>
+                    <p>This link connects to <a href="http://www.miami.edu">miami.edu</a>. This is an absolute lnik.</p>
+                    <p>This <a href="page2.html">link</a> goes to page 2</p>
+                    <p>This is a relative link to our <a href="images/takoyaki.jpg" target="_blank">image.</a></p>
+                    <p>An image is an inline tag <img src="images/takoyaki.jpg" alt="takoyaki"></p>
                 </section>
             </main>
             <footer></footer>
