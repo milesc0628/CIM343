@@ -94,3 +94,48 @@ h1{
     font-family: sans-serif;
     text-align: center;
 }
+
+.grid1{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#section2{
+    color: lime;
+    background-color:saddlebrown;
+}
+
+.grid2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.grid3{
+    height: 400px;
+    display:grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: space-between;
+    align-content: center;
+    background-color: darkcyan;
+}
+
+.grid3 > p{
+    background-color: powderblue;
+}
+
+.grid4{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid4 img{
+    width:100%;
+}
