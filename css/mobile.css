@@ -1,0 +1,36 @@
+@import "style.css";
+
+header{
+    width: 90%;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+nav > ul{
+    width:100%;
+    height: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+}
+
+main{
+    width:90%;
+}
+
+footer{
+    width: 90%;
+}
+
+.grid1{
+    display:block;
+}
+
+.grid2{
+    display:block;
+}
+
+.grid3{
+    display:block;
+}
