@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 let galleryClass = document.querySelectorAll(".imageGallery");
 console.log(galleryClass);
@@ -52,7 +52,20 @@ startButton.addEventListener("click", function(){
     if(autoCycleActive = false){
         autoCycleActive = true;
         cycleInterval = setInterval(function(){
+        galleryClass[currentImage].style.display = "none";
+    currentImage = currentImage + 1;
+    if(currentImage == galleryClass.length){
+        currentImage = 0;
+    }
+    galleryClass[currentImage].style.display = "block";
             console.log("Interval started");
         },3000);
     }
+});
+
+let stopButton = document.getElementById("stop");
+
+stopButton.addEventListener("click", function() {
+    clearInterval(cycleInterval);
+    autoCycleActive = false;
 });
